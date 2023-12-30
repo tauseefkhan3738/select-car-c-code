@@ -1,0 +1,126 @@
+#include<iostream>
+//#include<cstring>
+using namespace std;
+class Car{
+    protected:
+    string clr;
+    string name;
+    int price1,price2,price3,price4,price5,price6,price7,price8;
+    int pricen1,pricen2,pricen3,pricen4,pricen5;
+};
+
+class Vehical:public Car {
+    public:
+    void set(string n,string c)
+    {
+        name=n;
+        clr=c;
+        price1=2500000;
+        price2=3000000;
+        price3=24000000;
+        price4=23000000;
+        price5=34500000;
+        price6=54000000;
+        price7=52000000;
+        price8=28000500;
+        pricen1=2500000;
+        pricen2=2600000;
+        pricen3=2500000;
+        pricen4=2800000;
+        pricen5=2700000;
+        
+        if(clr=="white" & name=="bmw")
+        {
+            cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price1<<endl;
+}
+           else if(clr=="red" & name=="bmw"){
+                       cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price2<<endl;
+    }
+          else  if(clr=="purple" & name=="bmw"){
+              cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price3<<endl;
+    }
+           else if(clr=="green" & name=="bmw"){
+               cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price4<<endl;
+    }
+               else if(clr=="black" & name=="bmw"){
+                   cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price7<<endl;
+    }
+    else if(clr=="white" & name=="fortuner")
+        {
+            cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price5<<endl;
+}
+           else if(clr=="red" & name=="fortuner"){
+                       cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price6<<endl;
+    }
+          else  if(clr=="purple" & name=="fortuner"){
+              cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price7<<endl;
+}
+          else  if(clr=="purple" & name=="fortuner"){
+              cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price8<<endl;
+}
+          else  if(clr=="black" & name=="fortuner"){
+                      cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<price1<<endl;
+}
+else if(clr=="white" & name=="scorpioN")
+        {
+                    cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<pricen1<<endl;
+}
+           else if(clr=="red" & name=="scorpioN"){
+               cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<pricen2<<endl;
+    }
+          else  if(clr=="purple" & name=="scorpioN"){
+              cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<pricen3<<endl;
+}
+          else  if(clr=="purple" & name=="scorpioN"){
+                      cout<<"name:"<<name<<endl;
+        cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<pricen4<<endl;
+}
+          else  if(clr=="black" & name=="scorpioN"){
+        cout<<"name:"<<name<<endl;
+                cout<<"color:"<<clr<<endl;
+        cout<<"price:"<<pricen5<<endl;
+}
+}
+};
+
+int main()
+{
+    Vehical obj;
+    string cr,nm;
+    cout<<"write your car name:\n1.bmw\n2.fortuner\n3.scorpioN\n";
+    cout<<"enter your car name:";
+    cin>>nm;
+    cout<<endl<<endl<<"write your color name:\n1.white\n2.red\n3.purple\n4.green\n5.black\n";
+    cout<<"enter your color name:";
+    cin>>cr;
+    obj.set(nm,cr);
+    return 0;
+}
+
